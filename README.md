@@ -16,17 +16,11 @@ To run this project, make sure you have the following:
 - **MySQL**: Database for WordPress
 
 ## 📦 Installation
-### 0. Create those folders
-
-````bash
-mkdir backend
-mkdir 
-````
-
+``
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/blank-wordpress-template.git
-cd blank-wordpress-template
+git clone https://github.com/yourusername/yale-scholl.git
+cd yale-scholl
 
 ``` 
 ### 2. Install WordPress
@@ -42,6 +36,7 @@ cd frontend
 npm install
 npm start
 ```
+
 ### 4. Install WordPress Plugins
 WP REST API: This will enable WordPress to interact with the React and Laravel setup.
 ACF PRO (Advanced Custom Fields): For creating custom content fields within WordPress.
