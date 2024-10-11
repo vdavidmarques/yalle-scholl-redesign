@@ -20,7 +20,7 @@
 
         add_action('admin_menu', 'linked_url');
         function linked_url() {
-            add_menu_page('linked_url','General infos','read','post.php?post=6&action=edit','', 'dashicons-admin-generic',  90);
+            add_menu_page('linked_url','General infos','read','post.php?post=5&action=edit','', 'dashicons-admin-generic',  90);
         }
 
         /*******************************
@@ -31,7 +31,7 @@
         function exclude_pages_from_admin($query){
             global $pagenow,$post_type;
             if(is_admin() && $pagenow == 'edit.php' && $post_type == 'page') {
-                $settings_page = get_page_by_path('information', NULL,'page')->ID;
+                $settings_page = get_page_by_path('general-information', NULL,'page')->ID;
                 $query->query_vars['post__not_in'] = array($settings_page);
             }
         }
