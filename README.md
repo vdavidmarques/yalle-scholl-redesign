@@ -55,7 +55,7 @@ You can install these plugins directly via the WordPress admin dashboard or down
 - Active the theme and all the presets plugins
 - Urls examples at rest api
 /index.php?rest_route=/wp/v2/pages&slug=homepage
-/index.php?rest_route=/wp/v2/pages&slug=pages&slug=about
+/index.php?rest_route=/wp/v2/pages&slug=about
 
 ### 6. Run the Project
 
