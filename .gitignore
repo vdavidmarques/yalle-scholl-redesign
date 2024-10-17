@@ -20,3 +20,5 @@ backend/wp-content/index.php
 backend/wp-content/themes/index.php
 backend/index.php
 frontend/node_modules
+backend/wp-content/uploads/
+backend/wp-config.php

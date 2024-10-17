@@ -56,6 +56,7 @@ You can install these plugins directly via the WordPress admin dashboard or down
 - Urls examples at rest api
 /index.php?rest_route=/wp/v2/pages&slug=homepage
 /index.php?rest_route=/wp/v2/pages&slug=about
+index.php?rest_route=/custom-api/v1/menu/main-menu
 
 ### 6. Run the Project
 
