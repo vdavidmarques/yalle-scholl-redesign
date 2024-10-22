@@ -25,7 +25,7 @@ const Header = () => {
         <ul>
           {menuItems?.length > 0 &&
             menuItems.map((item) => (
-              <li key={item.ID}>
+              <li key={item.ID} className={`menu-item-${item.ID}`}>
                 <Link to={item.url} target={item?.target}>
                   {item.title}
                 </Link>

@@ -13,7 +13,7 @@ function custom_post_types()
         'has_archive' => true,
         'rewrite' => array('slug' => 'events'),
         'menu_icon' => 'dashicons-calendar-alt',
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+        'supports' => array('title', 'thumbnail', 'custom-fields'),
         'show_in_rest' => true
     ));
 
@@ -41,7 +41,7 @@ function custom_post_types()
         'has_archive' => true,
         'rewrite' => array('slug' => 'exhibitions'),
         'menu_icon' => 'dashicons-art',
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+        'supports' => array('title', 'thumbnail', 'excerpt', 'custom-fields'),
         'show_in_rest' => true
     ));
 

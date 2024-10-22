@@ -17,6 +17,15 @@ const apiService = {
   getGeneralInformationData() {
     return axios.get(`${API_BASE_URL}/pages&slug=general-information`);
   },
+  getEventsData(){
+    return axios.get(`${API_BASE_URL}/events`);
+  },
+  getPublicationsData(){
+    return axios.get(`${API_BASE_URL}/publications`);
+  },
+  getExhibitionsData(){
+    return axios.get(`${API_BASE_URL}/exhibitions`);
+  }
 };
 
 export default apiService;
