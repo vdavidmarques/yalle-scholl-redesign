@@ -10,16 +10,14 @@ const Homepage = () => {
   const slug = "homepage";
 
   return (
-    <>
-      <main className="homepage">
-        <MainBanner slug={slug} />
-        <HappeningAtSOA slug={slug} />
-        <PublicationsHomepage slug={slug} />
-        <ExhibitionsHomepage slug={slug} />
-        <CommunityBulletin slug={slug} />
-        <NewsLetter />
-      </main>
-    </>
+    <main className="homepage">
+      <MainBanner slug={slug} />
+      <HappeningAtSOA slug={slug} />
+      <PublicationsHomepage slug={slug} />
+      <ExhibitionsHomepage slug={slug} />
+      <CommunityBulletin slug={slug} />
+      <NewsLetter />
+    </main>
   );
 };
 export default Homepage;

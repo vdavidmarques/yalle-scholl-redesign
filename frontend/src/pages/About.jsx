@@ -1,10 +1,15 @@
 import React from "react"
+import MainBanner from "../components/MainBanner";
+import AboutContent from "../components/AboutContent";
 
 const About = () => {
+    const slug = "about-the-school";
     return (
-        <section className="about">
-            About.jsx
-        </section>
+        <main className="about-the-school">
+            <MainBanner slug={slug} />
+
+           <AboutContent slug={slug} />
+        </main>
     )
 }
 

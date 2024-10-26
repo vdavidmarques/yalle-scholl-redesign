@@ -25,6 +25,9 @@ const apiService = {
   },
   getExhibitionsData(){
     return axios.get(`${API_BASE_URL}/exhibitions`);
+  },
+  getCoursesData(){
+    return axios.get(`${API_BASE_URL}/courses`);
   }
 };
 
