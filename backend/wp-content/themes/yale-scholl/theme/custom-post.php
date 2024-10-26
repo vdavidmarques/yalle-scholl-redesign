@@ -55,7 +55,7 @@ function custom_post_types()
         'has_archive' => true,
         'rewrite' => array('slug' => 'courses'),
         'menu_icon' => 'dashicons-welcome-learn-more',
-        'supports' => array('title', 'thumbnail',  'custom-fields'),
+        'supports' => array('title', 'thumbnail','excerpt','custom-fields'),
         'show_in_rest' => true
     ));
 }
