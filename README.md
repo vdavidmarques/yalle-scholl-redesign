@@ -12,6 +12,7 @@ You can see the ui project at https://www.figma.com/file/rnX2TausVQWrb9xW3OUl16/
 To run this project, make sure you have the following:
 
 - **Node.js**: Version 16 or above
+- **NPM** ou **Yarn**
 - **NextJs**: Latest version
 - **ReactJS**: Latest version
 - **PHP**: Version 7.4 or above
@@ -32,23 +33,13 @@ mkdir backend
 - Configure the wp-config.php file with your database credentials.
 
 ``
-### 3. Set Up ReactJS (Frontend)
+### 3. Set Up NextJs (Frontend)
 - Return to default directory
 ```bash
-npx create-react-app frontend
+npx create-next-app frontend
 ```
 
-### 4. Set Up TailwindCSS
-Install TailwindCSS:
-````bash
-cd frontend
-npm install -D tailwindcss
-npx tailwindcss init
-
-````
-Configure tailwind.config.js to suit your project's needs.
-
-### 5. Install WordPress Plugins
+### 4. Install WordPress Plugins
 WP REST API: This will enable WordPress to interact with the React and Laravel setup.
 ACF PRO (Advanced Custom Fields): For creating custom content fields within WordPress.
 Safe SVG: Allows the safe upload and use of SVG files in WordPress.
@@ -72,4 +63,4 @@ index.php?rest_route=/custom-api/v1/menu/main-menu
 
 ````bash
 cd frontend
-npm start
+npm run dev
