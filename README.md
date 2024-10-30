@@ -4,6 +4,7 @@ You can see the ui project at https://www.figma.com/file/rnX2TausVQWrb9xW3OUl16/
 
 ## 🚀 Features
 - **ReactJS** for dynamic frontend development.
+- **NextJs** for server-side rendering and SEO optimization.
 - **WordPress** serves as the CMS with ACF, WP REST API, and Safe SVG plugins.
 - **TailwindCSS** for utility-first styling.
 
@@ -11,6 +12,8 @@ You can see the ui project at https://www.figma.com/file/rnX2TausVQWrb9xW3OUl16/
 To run this project, make sure you have the following:
 
 - **Node.js**: Version 16 or above
+- **NextJs**: Latest version
+- **ReactJS**: Latest version
 - **PHP**: Version 7.4 or above
 - **WordPress**: Latest version
 - **MySQL**: Database for WordPress
@@ -19,7 +22,7 @@ To run this project, make sure you have the following:
 ``
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/yale-scholl.git
+git clone https://github.com/vdavidmarques/yale-scholl.git
 cd yale-scholl
 mkdir backend
 ``` 
@@ -54,8 +57,15 @@ You can install these plugins directly via the WordPress admin dashboard or down
 
 - Active the theme and all the presets plugins
 - Urls examples at rest api
+
+- Pages
 /index.php?rest_route=/wp/v2/pages&slug=homepage
 /index.php?rest_route=/wp/v2/pages&slug=about
+
+- Singles
+/index.php?rest_route=/wp/v2/courses&slug=graphic-design
+
+- Menus
 index.php?rest_route=/custom-api/v1/menu/main-menu
 
 ### 6. Run the Project
