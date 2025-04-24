@@ -1,66 +1,88 @@
-## Yale Scholl Redesign
-Redesigning do website da Yale School - Escola de arte. Você pode encontrar o site original nessa url: www.art.yale.edu/
-You can see the ui project at https://www.figma.com/file/rnX2TausVQWrb9xW3OUl16/YALE-SCHOOL-%C2%ADOF-ART
+## Yale Art School Redesign
+
+A redesign of the Yale School of Art website.
+
+*   **Original Site:** [art.yale.edu](https://art.yale.edu/)
+*   **UI Design (Figma):** [Yale School of Art - Figma](https://www.figma.com/file/rnX2TausVQWrb9xW3OUl16/YALE-SCHOOL-%C2%ADOF-ART)
 
 ## 🚀 Features
-- **ReactJS** for dynamic frontend development.
-- **NextJs** for server-side rendering and SEO optimization.
-- **WordPress** serves as the CMS with ACF, WP REST API, and Safe SVG plugins.
-- **TailwindCSS** for utility-first styling.
+
+*   **Laravel** for Backend and Frontend
+*   **Tailwind CSS** for utility-first styling.
 
 ## 🛠️ Requirements
-To run this project, make sure you have the following:
 
-- **Node.js**: Version 16 or above
-- **NPM** ou **Yarn**
-- **NextJs**: Latest version
-- **ReactJS**: Latest version
-- **PHP**: Version 7.4 or above
-- **WordPress**: Latest version
-- **MySQL**: Database for WordPress
+To run this project, make sure you have the following installed:
 
-## 📦 Installation
-``
-### 1. Clone the Repository
-```bash
-git clone https://github.com/vdavidmarques/yale-scholl.git
-cd yale-scholl
-mkdir backend
-``` 
-### 2. Install WordPress
-- Download the latest version of WordPress.
-- Extract it into your backend directory.
-- Configure the wp-config.php file with your database credentials.
+*   **PHP:** Version 8.1 or higher (check Laravel documentation for the specific version)
+*   **Composer:** PHP dependency manager
+*   **Node.js:** Version 18.x or higher
+*   **NPM** or **Yarn:** Node.js package manager
+*   **MySQL** (or another DBMS configured in `.env`)
+*   **Git**
 
-``
-### 3. Set Up NextJs (Frontend)
-- Return to default directory
-```bash
-npx create-next-app frontend
-```
+## 📦 Installation & Setup
 
-### 4. Install WordPress Plugins
-WP REST API: This will enable WordPress to interact with the React and Laravel setup.
-ACF PRO (Advanced Custom Fields): For creating custom content fields within WordPress.
-Safe SVG: Allows the safe upload and use of SVG files in WordPress.
-Contact Form 7
-You can install these plugins directly via the WordPress admin dashboard or download and place them in the wp-content/plugins directory.
+Follow these steps to set up the development environment:
 
-- Active the theme and all the presets plugins
-- Urls examples at rest api
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/vdavidmarques/yale-art-school.git
+    cd yale-art-school
+    ```
 
-- Pages
-/index.php?rest_route=/wp/v2/pages&slug=homepage
-/index.php?rest_route=/wp/v2/pages&slug=about
+2.  **Install PHP Dependencies (Composer):**
+    ```bash
+    composer install
+    ```
 
-- Singles
-/index.php?rest_route=/wp/v2/courses&slug=graphic-design
+3.  **Install Node.js Dependencies (NPM or Yarn):**
+    ```bash
+    npm install
+    # or
+    # yarn install
+    ```
 
-- Menus
-index.php?rest_route=/custom-api/v1/menu/main-menu
+4.  **Configure Environment File:**
+    *   Copy the example `.env.example` file to `.env`:
+        ```bash
+        cp .env.example .env
+        ```
+    *   Generate the Laravel application key:
+        ```bash
+        php artisan key:generate
+        ```
+    *   **Important:** Open the `.env` file and configure your environment variables, especially the database connection details (`DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`). Ensure the database (`DB_DATABASE`) already exists in your DBMS.
 
-### 6. Run the Project
+5.  **Run Database Migrations:**
+    *   This command will create the tables in your configured database.
+    ```bash
+    php artisan migrate
+    ```
+    *   (Optional) If the project has seeders to populate the database with initial data:
+    ```bash
+    php artisan db:seed
+    ```
 
-````bash
-cd frontend
-npm run dev
+6.  **Compile Assets (CSS/JS with Vite):**
+    *   For development (with hot-reloading and auto-refresh):
+        ```bash
+        npm run dev
+        ```
+    *   To build optimized assets for production:
+        ```bash
+        npm run build
+        ```
+
+7.  **Start the Laravel Development Server:**
+    *   Keep the `npm run dev` command running in one terminal if you are in development mode.
+    *   In another terminal, start the PHP server:
+    ```bash
+    php artisan serve
+    ```
+
+    The application will typically be available at `http://127.0.0.1:8000`.
+
+## 🚀 Usage
+
+After following the installation steps and with the `npm run dev` (if applicable) and `php artisan serve` commands running, access the URL provided by `php artisan serve` (usually `http://127.0.0.1:8000`) in your browser.
