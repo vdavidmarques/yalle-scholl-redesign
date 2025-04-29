@@ -21,11 +21,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="hover:underline flex items-center gap-x-2">
-                            <i data-lucide="book-text" class="w-5 h-5"></i>Informações Gerais
+                        <a href="{{ route('admin.settings.edit') }}" class="hover:underline flex items-center gap-x-2">
+                            <i data-lucide="info" class="w-5 h-5"></i>Informações Gerais
                         </a>
                     </li>
-                    
+
                     <li>
                         <a href="{{ route('admin.publications.index') }}" class="hover:underline flex items-center gap-x-2">
                             <i data-lucide="book-text" class="w-5 h-5"></i>Publicações
