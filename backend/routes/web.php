@@ -41,7 +41,4 @@ Route::middleware(['auth'])
 Route::get('/publicacoes', [PublicPublicationController::class, 'index'])->name('site.publications.index');
 Route::get('/publicacoes/{publication}', [PublicPublicationController::class, 'show'])->name('site.publications.show');
 
-Route::get('/api/teste', fn () => ['ok' => true]);
-
-
 require __DIR__.'/auth.php';
