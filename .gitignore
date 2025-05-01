@@ -1,4 +1,5 @@
 /.phpunit.cache
+backend-old
 backend/node_modules
 backend/public/build
 backend/public/hot
@@ -38,3 +39,4 @@ backend/tests/Unit/ExampleTest.php
 phpunit.xml
 .env.example
 .editorconfig
+*.Identifier
