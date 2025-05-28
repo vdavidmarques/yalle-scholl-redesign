@@ -27,6 +27,19 @@
                     </li>
 
                     <li>
+                        <span class="flex items-center gap-x-2">
+                            <i data-lucide="home" class="w-5 h-5"></i>Homepage
+                        </span>
+                        <ul class="ml-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.homepage.slides.index') }}" class="hover:underline flex items-center gap-x-2">
+                                    <i data-lucide="image-play" class="w-5 h-5"></i>Slides
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
                         <a href="{{ route('admin.publications.index') }}" class="hover:underline flex items-center gap-x-2">
                             <i data-lucide="book-text" class="w-5 h-5"></i>Publicações
                         </a>
