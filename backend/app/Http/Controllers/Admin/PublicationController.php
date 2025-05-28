@@ -13,7 +13,6 @@ class PublicationController extends Controller
      */
     public function index()
     {
-        $publications = Publication::latest()->get();
         $publications = Publication::latest()->paginate(10);
         return view('admin.publications.index', compact('publications'));
     }
@@ -70,7 +69,7 @@ class PublicationController extends Controller
         $data = $request->validate([
             'title' => 'required|string|max:255',
             'body' => 'required|string',
-            'image' => 'required|nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         if($request->hasFile('image')){
